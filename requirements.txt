@@ -1,5 +1,9 @@
-Flask==2.1.2
-ccxt==2.8.86
+
+ccxt
 aiohttp
 asyncio==3.4.3
 gunicorn 
+Flask==2.1.4
+
+
+
