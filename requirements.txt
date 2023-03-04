@@ -1,5 +1,5 @@
 Flask==2.1.2
 ccxt==2.8.86
-aiohttp==3.7.4.post0
+aiohttp
 asyncio==3.4.3
 gunicorn 
