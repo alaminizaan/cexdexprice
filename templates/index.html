@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Crypto Exchange Ticker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Crypto Exchange Ticker</h1>
+    </header>
+    <main>
+        <h2>Select an exchange:</h2>
+        <form method="post">
+            <select name="exchange">
+                {% for exchange in cex_exchanges %}
+                    <option value="{{ exchange }}">{{ exchange }}</option>
+                {% endfor %}
+                {% for exchange in dex_exchanges %}
+                    <option value="{{ exchange }}">{{ exchange }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <input type="radio" name="exchange_type" value="cex" checked>
+            <label for="cex">CEX</label>
+            <input type="radio" name="exchange_type" value="dex">
+            <label for="dex">DEX</label>
+            <br><br>
+            <input type="submit" value="Get prices">
+        </form>
+    </main>
+</body>
+</html>
