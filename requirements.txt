@@ -1,6 +1,7 @@
 
 Flask==2.1.2
-ccxt==1.58.1
+cxt==*
+
 aiohttp
 
 gunicorn 
