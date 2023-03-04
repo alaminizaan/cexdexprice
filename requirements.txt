@@ -1,9 +1,9 @@
 
 ccxt
 aiohttp
-asyncio==3.4.3
+asyncio
 gunicorn 
-Flask==2.1.4
+Flask
 
 
 
