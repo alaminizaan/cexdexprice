@@ -9,6 +9,6 @@ gunicorn
 
 Flask==2.1.2
 ccxt==2.8.10
-aiohttp==3.7.4.post0
+aiohttp
 
 
